@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <script src="calculator.js"></script>
+  </head>
+  <body>
+    <form id="myCalculator" onsubmit="calculate(event)">
+      <table>
+        <tr>
+          <th>Number</th>
+          <th>Operation</th>
+          <th>Number</th>
+          <th></th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="input1"></td>
+          <td>
+            <select name="operation">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">x</option>
+              <option value="/">⁄</option>
+            </select>
+          </td>
+          <td><input type="text" name="input2"></td>
+          <td><input type="submit" value="="></td>
+          <td><input type="text" name="result"></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

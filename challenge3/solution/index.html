@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Game - Guess The Number</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+  </head>
+
+  <body onLoad="load()">
+
+    <form id="game">
+      <table class="my-table">
+        <tr>
+          <th colspan="4">Guessing Game 😎</th>
+        </tr>
+        <tr>
+          <td colspan="2">Range of numbers</td>
+          <td rowspan="2"><input type="button" value="Start" onclick="range()"></td>
+        </tr>
+
+        <tr>
+          <td>from:<br><input type="text" name="from" size="10"></td>
+          <td>to:<br><input type="text" name="to" size="10"></td>
+        </tr>
+
+        <tr>
+          <td colspan=3><div id="help"></div></td>
+        </tr>
+
+        <tr>
+          <td class="right-aligned" colspan="3">
+            <input type="text" name="myGuess" size="10">
+            <input type="button" value="Guess" onclick="guess()">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

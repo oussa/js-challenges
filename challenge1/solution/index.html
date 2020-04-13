@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Today's Date</title>
+    <script>
+      function setDate() {
+        var todayDiv = document.getElementById('today');
+        var text = 'Today is ' + new Date().toDateString() + ' !';
+
+        // Set the text of the div with id today to today's date
+        todayDiv.innerHTML = text;
+
+        // Set the title of the page to today's date
+        document.title = text;
+      }
+    </script>
+  </head>
+
+  <!-- we call the function setDate when the page is done loading -->
+  <body onload="setDate()">
+    <div id="today"></div>
+  </body>
+</html>
